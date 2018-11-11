@@ -5,7 +5,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@ap.cx/react-fullpage": "^0.1.9-alpha",
+    "@ap.cx/react-fullpage": "^0.1.10-alpha",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1"
