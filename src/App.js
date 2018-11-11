@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fullpage, { FullPageSections, FullpageSection, FullpageCount, FullpageNavigation } from '@ap.cx/react-fullpage';
 import logo from './logo.svg';
 import './App.css';
 
