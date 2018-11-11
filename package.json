@@ -1,7 +1,9 @@
 {
   "name": "react-fullpage-gh-pages",
+  "homepage": "https://thierryc.github.io/react-fullpage",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.1.9-alpha",
     "react": "^16.6.1",
