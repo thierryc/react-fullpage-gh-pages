@@ -1,6 +1,9 @@
-# react-fullpage-gh-pages
+# Demo site for React Fullpage
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Content and images are taken from [Wikipedia](https://en.wikipedia.org)
+
 
 ## Available Scripts
 
