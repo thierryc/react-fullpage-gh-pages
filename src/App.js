@@ -31,6 +31,7 @@ class App extends Component {
               </ul>
             </Navigation>
 
+<<<<<<< HEAD
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
@@ -47,6 +48,67 @@ class App extends Component {
           </div>
         </Router>
         
+=======
+          <FullpageNavigation/>
+
+          <FullPageSections>
+            <FullpageSection>
+              <div className="App">
+                <header className="App-header">
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <p>
+                    Edit <code>src/App.js</code> and save to reload!
+                  </p>
+                  <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn React
+                  </a>
+                </header>
+              </div>
+            </FullpageSection>
+            <FullpageSection>
+              <div className="App">
+                <header className="App-header">
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <p>
+                    Fullpage <FullpageSection.Number/>/<FullpageCount/>.
+                  </p>
+                  <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn React
+                  </a>
+                </header>
+              </div>
+            </FullpageSection>
+            <FullpageSection>
+              <div className="App">
+                <header className="App-header">
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <p>
+                    Fullpage <FullpageSection.Number/>/<FullpageCount/>.
+                  </p>
+                  <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn React
+                  </a>
+                </header>
+              </div>
+            </FullpageSection>
+          </FullPageSections>
+        </Fullpage>
+>>>>>>> 89624df21965da470717c75588439d267fe9a83d
       </React.StrictMode>
     );
   }
