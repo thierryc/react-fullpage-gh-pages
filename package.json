@@ -1,16 +1,16 @@
 {
   "name": "react-fullpage-gh-pages",
-  "homepage": "https://thierryc.github.io/react-fullpage-gh-pages",
+  "homepage": "https://thierryc.github.io/react-fullpage",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1",
-    "styled-components": "^5.0.0"
+    "react-scripts": "3.4.4",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -4,12 +4,13 @@ import {
   Switch,
   Route,
   Link,
-  useLocation,
 } from "react-router-dom";
-import Fullpage, { FullPageSections, FullpageSection, FullpageCount, FullpageNavigation } from '@ap.cx/react-fullpage';
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation';
+import Home from './Home';
+import About from './About';
+import Documentation from './Documentation';
+import ExampleHeaderFooterDrawer from './ExampleHeaderFooterDrawer'
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
             <Navigation>
               <ul>
                 <li>
-                  <Link to="/">React Fullpage</Link>
+                  <Link to="/" className="active">React Fullpage</Link>
                 </li>
                 <li>
                   <Link to="/about">About</Link>
@@ -28,10 +29,11 @@ class App extends Component {
                 <li>
                   <Link to="/documentation">Documentation</Link>
                 </li>
+                <li>
+                  <Link to="/Example-header-footer-drawer">Example (soon)</Link>
+                </li>
               </ul>
             </Navigation>
-
-<<<<<<< HEAD
             {/* A <Switch> looks through its children <Route>s and
                 renders the first one that matches the current URL. */}
             <Switch>
@@ -41,152 +43,18 @@ class App extends Component {
               <Route path="/documentation">
                 <Documentation />
               </Route>
+              <Route path="/Example-header-footer-drawer">
+                <ExampleHeaderFooterDrawer />
+              </Route>
               <Route path="/">
                 <Home />
               </Route>
             </Switch>
           </div>
         </Router>
-        
-=======
-          <FullpageNavigation/>
-
-          <FullPageSections>
-            <FullpageSection>
-              <div className="App">
-                <header className="App-header">
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <p>
-                    Edit <code>src/App.js</code> and save to reload!
-                  </p>
-                  <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Learn React
-                  </a>
-                </header>
-              </div>
-            </FullpageSection>
-            <FullpageSection>
-              <div className="App">
-                <header className="App-header">
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <p>
-                    Fullpage <FullpageSection.Number/>/<FullpageCount/>.
-                  </p>
-                  <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Learn React
-                  </a>
-                </header>
-              </div>
-            </FullpageSection>
-            <FullpageSection>
-              <div className="App">
-                <header className="App-header">
-                  <img src={logo} className="App-logo" alt="logo" />
-                  <p>
-                    Fullpage <FullpageSection.Number/>/<FullpageCount/>.
-                  </p>
-                  <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Learn React
-                  </a>
-                </header>
-              </div>
-            </FullpageSection>
-          </FullPageSections>
-        </Fullpage>
->>>>>>> 89624df21965da470717c75588439d267fe9a83d
       </React.StrictMode>
     );
   }
-}
-
-function Home() {
-  let location = useLocation();
-  console.log(location);
-  
-  return (
-    <Fullpage>
-      <FullpageNavigation/>
-      <FullPageSections>
-        <FullpageSection>
-          <div className="App">
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Edit <code>src/App.js</code> and save to reload.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </header>
-          </div>
-        </FullpageSection>
-        <FullpageSection>
-          <div className="App">
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Fullpage <FullpageSection.Number/>/<FullpageCount/>.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </header>
-          </div>
-        </FullpageSection>
-        <FullpageSection>
-          <div className="App">
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Fullpage <FullpageSection.Number/>/<FullpageCount/>.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </header>
-          </div>
-        </FullpageSection>
-      </FullPageSections>
-    </Fullpage>
-  );
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Documentation() {
-  return <h2>Users</h2>;
 }
 
 export default App;
