@@ -8,7 +8,6 @@ import logo from './logo.svg';
 
 function Home() {
   const location = useLocation();
-  console.log(location);
   
   return (
     <Fullpage>
@@ -24,7 +23,7 @@ function Home() {
               <FullpageContext.Consumer>
                 {
                   ctx => (
-                    <button onClick={() => ctx.goto(ctx.slides[ctx.slides.length -1])}>Goto Last</button>
+                    <button onClick={() => ctx.goto(ctx.slides[ctx.slides.length -1], true)}>Goto Last</button>
                   )
                 } 
               </FullpageContext.Consumer>
@@ -41,7 +40,7 @@ function Home() {
               <FullpageContext.Consumer>
                 {
                   ctx => (
-                    <button onClick={() => ctx.goto(ctx.slides[0])}>Goto First</button>
+                    <button onClick={() => ctx.goto(ctx.slides[0], true)}>Goto First</button>
                   )
                 }
               </FullpageContext.Consumer>
@@ -58,7 +57,41 @@ function Home() {
               <FullpageContext.Consumer>
                 {
                   ctx => (
-                    <button onClick={() => ctx.goto(ctx.slides[0])}>Goto First</button>
+                    <button onClick={() => ctx.goto(ctx.slides[0], true)}>Goto First</button>
+                  )
+                }
+              </FullpageContext.Consumer>
+            </header>
+          </div>
+        </FullpageSection>
+        <FullpageSection>
+          <div className="App">
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <p>
+                Fullpage <FullpageSection.Number/>/<FullpageCount/>.
+              </p>
+              <FullpageContext.Consumer>
+                {
+                  ctx => (
+                    <button onClick={() => ctx.goto(ctx.slides[0], true)}>Goto First</button>
+                  )
+                }
+              </FullpageContext.Consumer>
+            </header>
+          </div>
+        </FullpageSection>
+        <FullpageSection>
+          <div className="App">
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+              <p>
+                Fullpage <FullpageSection.Number/>/<FullpageCount/>.
+              </p>
+              <FullpageContext.Consumer>
+                {
+                  ctx => (
+                    <button onClick={() => ctx.goto(ctx.slides[0], true)}>Goto First</button>
                   )
                 } 
               </FullpageContext.Consumer>
